@@ -42,6 +42,7 @@
 }
 * body nav #ancor {
   text-decoration: none;
+  text-anchor: middle;
   padding: 0 2% 3% 2%;
   font-size: 1, 5rem;
   color: #E1E8E6;
@@ -49,6 +50,16 @@
 }
 * body nav #ancor:hover {
   border-bottom: solid 2px #E1E8E6;
+}
+.hamburger{
+  display: none;
+}
+.hamburger .line{
+  width: 28px;
+  height: 3px;
+  border-radius: 2px;
+  margin: 5px;
+  background-color: #E1E8E6;
 }
 * body .section-01 {
   height: 100vh;
@@ -66,7 +77,6 @@
   border: 2px solid #B0B5B4;
 }
 * body .section-02 {
-  height: 65vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,7 +116,6 @@
   width: 500px;
   margin: 1%;
   padding: 2% 0 2% 0;
-  border: solid 2px transparent;
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -123,7 +132,7 @@
   margin-top: 2%;
 }
 * body .section-03 .CardsContainer .cards:hover {
-  border: solid 2px #323534;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 * body .footer-container-01 {
   display: flex;
@@ -154,6 +163,34 @@
 }
 * body .footer-container-01 .contacts a:hover {
   color: #B0B5B4;
+}
+@media (max-width:768px) {
+  .hamburger{
+    display: block;
+  }
+  .hamburger.active .line:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .line:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .line:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .ancorsLink{
+    position: absolute;
+    text-align: center;
+    padding: 5px;
+    top: -350%;
+    background-color: #323534;
+    flex-direction: column;
+    width: 100%;
+    transition: .2s;
+  }
+  .ancorsLink.active{
+    width: 100%;
+    top: 79%;
+  }
 }
 @media (max-width:660px) {
   .about-container{
