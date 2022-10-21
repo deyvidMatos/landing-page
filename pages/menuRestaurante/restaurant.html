@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de Restaurante</title>
+        <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.min.js" defer></script>
+</head>
+    <body>
+        <div class="creator-container">
+            <h1>novo sabor</h1>
+            <button id="modalBtn" type="button" onclick="modalBtn()">+</button>
+        </div>
+        <section class="creation-invisible">
+            <h1>adicionar sabor</h1>
+            <form>
+                <button id="closerBtn" type="button" onclick="closeModal()">X</button>
+                
+                <label for="item-title">Sabor: </label>
+                <input type="text" id="item-title" name="item-title" placeholder="adicionar o sabor">
+                
+                <label for="item-categoy">Categoria: </label>
+                <select id="item-categoy" name="item-categoy" aria-placeholder="selecione a categoria">
+                    <option value="tradicional">tradicional</option>
+                    <option value="Gourmet">Gourmet</option>
+                    <option value="Doce">Doce</option>
+                    <option value="Especial">Especial</option>
+                </select>
+
+                <label for="item-price">Preço: </label>
+                <input type="text" id="item-price" name="item-price" placeholder="adicionar a preço">
+                
+                <label for="item-img">Imagem: </label>
+                <input type="text" id="item-img" name="item-img" placeholder="adicionar a imagem">
+
+                <label for="item-decr">Descrição: </label>
+                <input type="text" id="item-decr" name="item-decr" placeholder="adicionar a descrição">
+                
+                <button id="addBtn" type="button" onclick="addPizza()">adicionar</button>
+            </form>
+        </section>
+        <section class="menu">
+            <!-- title -->
+            <div class="title">
+                <h1>Menu</h1>
+            <div class="underline"></div>
+            </div>
+            <!-- filter btn -->
+            <div class="btn-container">
+            </div>
+            <!-- menu items -->
+            <div class="section-center">
+            </div>
+        </section>
+        <a href="../../index.html" class="modalHome"><i class="bi bi-house-door homeIcon"></i></a>
+    </body>
+</html>

@@ -1,0 +1,1 @@
+(()=>{var e=["green","red","rba(133,122,200)","#f15025"],t=document.getElementById("btn"),n=document.getElementById("color");t.addEventListener("click",(function(){var t=Math.floor(Math.random()*e.length);n.textContent=e[t],document.body.style.backgroundColor=e[t]}))})();

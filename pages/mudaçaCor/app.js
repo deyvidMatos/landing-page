@@ -1,0 +1,1 @@
+(()=>{var t=[0,1,2,4,5,6,7,8,9,"A","B","C","D","E","F"],e=document.getElementById("btn"),n=document.getElementById("color");e.addEventListener("click",(function(){for(var e="#",o=0;o<6;o++)e+=t[Math.floor(Math.random()*t.length)];n.textContent=e,document.body.style.backgroundColor=e}))})();

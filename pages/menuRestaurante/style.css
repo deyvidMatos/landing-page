@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #3b3514;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+* body {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+* body .menu {
+  width: 75%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+* body .menu .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+* body .menu .title h1 {
+  font-size: 3rem;
+  margin: 20px;
+}
+* body .menu .title .underline {
+  width: 100%;
+  height: 3px;
+  margin: 20px;
+  margin-top: 0px;
+  background: rgb(149, 139, 177);
+  background: linear-gradient(260deg, rgba(149, 139, 177, 0) 0%, #F5DB49 50%, rgba(193, 119, 169, 0) 100%);
+}
+* body .menu .btn-container .filter-btn {
+  font-size: 1.1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #C2AD3A;
+  background: transparent;
+  border: solid 2px #C2AD3A;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 20px;
+  cursor: pointer;
+}
+* body .menu .btn-container .filter-btn:hover {
+  background-color: #C2AD3A;
+  color: white;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+}
+* body .menu .section-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+* body .menu .section-center .menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+* body .menu .section-center .menu-item .photo {
+  max-width: 300px;
+  border: solid 3px #F5DB49;
+  border-radius: 20px;
+}
+* body .menu .section-center .menu-item .item-info {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+* body .menu .section-center .menu-item .item-info header {
+  display: flex;
+  justify-content: space-between;
+}
+* body .menu .section-center .menu-item .price {
+  color: #C2AD3A;
+}
+* body .menu .section-center .menu-item:hover {
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
+}
+* body .creation-invisible {
+  position: fixed;
+  visibility: hidden;
+}
+* body .creation-visible {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+  background-color: rgba(184, 135, 11, 0.24);
+  backdrop-filter: blur(30px);
+}
+* body .creation-visible h1 {
+  padding: 15px 25px;
+  background-color: darkgoldenrod;
+  border-radius: 20px 20px 0px 0px;
+}
+* body .creation-visible form {
+  width: 50%;
+  padding: 5%;
+  border-radius: 20px;
+  background-color: rgb(218, 167, 39);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+* body .creation-visible form input {
+  width: 80%;
+  margin: 3%;
+  padding: 10px;
+  border-radius: 20px;
+}
+* body .creation-visible form #item-categoy {
+  width: 80%;
+  margin: 3%;
+  padding: 10px;
+  border-radius: 20px 20px 0px 0px;
+}
+* body .creation-visible form #closerBtn {
+  margin: 2%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 6px 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: red;
+  border: 2px solid red;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+* body .creation-visible form #closerBtn:hover {
+  background-color: red;
+  color: white;
+}
+* body .creation-visible form #addBtn {
+  width: 200px;
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 20px;
+  border: 2px solid green;
+  color: green;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+* body .creation-visible form #addBtn:hover {
+  background-color: green;
+  color: white;
+}
+* body .creator-container {
+  display: flex;
+  align-items: center;
+}
+* body .creator-container #modalBtn {
+  padding: 10px 15px;
+  margin: 20px;
+  font-size: 1.8rem;
+  color: darkgoldenrod;
+  border: 2px solid darkgoldenrod;
+  background: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+}
+* body .creator-container #modalBtn:hover {
+  background: darkgoldenrod;
+  color: white;
+}
+.modalHome{
+  width: fit-content;
+  padding: 10px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2%;
+  left: 2%;
+  background-color: white;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.521);
+}
+.modalHome,  .homeIcon{
+  color: black;
+  font-size: 2rem;
+}
+
+@media (max-width: 769px) {
+  .creation-visible form {
+    width: 90% !important;
+  }
+}
+@media (max-width: 375px) {
+  .creation-visible form {
+    width: 100% !important;
+  }
+  .section-center, .menu-item, .photo {
+    max-width: 100% !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+* body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(108, 158, 185);
+  background: linear-gradient(308deg, rgb(108, 158, 185) 0%, rgb(193, 119, 169) 100%);
+}
+* body header {
+  width: 700px;
+  height: 350px;
+  border-radius: 20px;
+  padding: 20px;
+  background: rgb(241, 241, 241);
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.3);
+}
+* body header h1 {
+  font-size: 3rem;
+}
+* body header .banner {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+* body header .banner .modal-btn {
+  margin-top: 25px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(66, 123, 197);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+* body .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 217, 255, 0.322);
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  z-index: -10;
+}
+* body .open-modal {
+  visibility: visible;
+  z-index: 10;
+}
+* body .modal-container {
+  position: relative;
+  background-color: white;
+  max-width: 700px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+* body .modal-container h3 {
+  font-size: 2rem;
+  margin: 15px;
+}
+* body .modal-container .links-modal, * body .modal-container li {
+  list-style: none;
+}
+* body .modal-container .links-modal a, * body .modal-container li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: rgb(34, 123, 206);
+}
+* body .modal-container .closer-btn {
+  position: absolute;
+  padding: 7px;
+  font-size: 1.2rem;
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  color: red;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+* body .modal-container .closer-btn:hover {
+  background-color: red;
+  color: white;
+}
+.modalHome{
+  width: fit-content;
+  padding:  10px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2%;
+  left: 2%;
+  background-color: white;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.521);
+}
+.modalHome,  .homeIcon{
+  color: black;
+  font-size: 2rem;
+}
+@media (max-width:400px) {
+  * body .modal-container h3 {
+    font-size: 1.3rem;
+  }
+  
+}

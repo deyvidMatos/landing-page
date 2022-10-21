@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+}
+h1{
+    margin: 50px 0px 35px 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(41, 41, 88);
+    font-size: 2rem;
+}
+#inputForm{
+    margin: 0px 0px 50px 0px;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.7rem;
+    color: rgb(41, 41, 88);
+}
+#generatorInput{
+    width: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.4rem;
+    color: rgb(41, 41, 88);
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+#generatorBtn{
+    cursor: pointer;
+    padding: 5px 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    border: solid 2px rgb(41, 41, 88);
+    color: rgb(41, 41, 88);
+    background-color: transparent;
+}
+#generatorBtn:hover{
+    background-color: rgb(41, 41, 88);
+    color: white;
+}
+#refresh{
+    cursor: pointer;
+    padding: 5px 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    border: solid 2px rgb(128, 38, 38);
+    color: rgb(128, 38, 38);
+    background-color: transparent;
+}
+#refresh:hover{
+    background-color: rgb(128, 38, 38);
+    color: white;
+}
+#generatedParagraph{
+    width: 60%;
+}
+#generatedParagraph p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: rgba(41, 41, 88, 0.712);
+    text-align: center;
+}
+.modalHome{
+    width: fit-content;
+    padding: 10px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 2%;
+    left: 2%;
+    background-color: white;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.521);
+  }
+  .modalHome,  .homeIcon{
+    color: black;
+    font-size: 2rem;
+  }
