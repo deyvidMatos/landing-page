@@ -3,4 +3,4 @@
 > ## *Contem:*
 > - contatos;
 > - e outros projetos;
-> > *Vai La ver:* [landing-page](https://deyvidmatos.github.io/landing-page/pages//counter/counter.html)
+> > *Vai La ver:* [landing-page](https://deyvidmatos.github.io/landing-page/)
