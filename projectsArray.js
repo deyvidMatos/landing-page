@@ -75,4 +75,11 @@ export const projects = [
         desc: `Projeto simples de mudança de conteúdo.`,
         href: 'https://deyvidmatos.github.io/tabs-React/'
     },
+    {
+        id: 11,
+        title: 'Planets React',
+        img: './image/Planets.png',
+        desc: `Projeto sobre planetas com mudança de conteúdo.`,
+        href: 'https://deyvidmatos.github.io/planets-React/'
+    },
 ]
