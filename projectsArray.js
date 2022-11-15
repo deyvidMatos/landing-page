@@ -82,4 +82,11 @@ export const projects = [
         desc: `Projeto sobre planetas com mudança de conteúdo.`,
         href: 'https://deyvidmatos.github.io/planets-React/'
     },
+    {
+        id: 12,
+        title: 'Anime Project',
+        img: './image/anime project.png',
+        desc: `Projeto com catalogo de animes com pesquisa e paginação.`,
+        href: 'https://deyvidmatos.github.io/animes-project/'
+    },
 ]
