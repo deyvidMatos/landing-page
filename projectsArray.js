@@ -1,6 +1,62 @@
 export const projects = [
     {
         id: 1,
+        title: 'Responsividade',
+        img: './image/responsividade.png',
+        desc: `Um dos primeiros mini projetos 
+                que foram feitos com base ao curso.`,
+        href: 'https://deyvidmatos.github.io/responsividade/'
+    },
+    {
+        id: 2,
+        title: 'Portfolio com Bulma',
+        img: './image/portifolioBulma.png',
+        desc: `Um dos primeiros mini projetos 
+                que foram feitos com base ao curso.`,
+        href: 'https://deyvidmatos.github.io/portifolioBulma/'
+    },
+    {
+        id: 3,
+        title: 'Landing page c/ Bootstrap e Sass',
+        img: './image/landingpageBoostrapSass.png',
+        desc: `Um dos primeiros mini projetos 
+                que foram feitos com base ao curso.`,
+        href: 'https://deyvidmatos.github.io/ladingPage-BoostrapSass/'
+    },
+    {
+        id: 4,
+        title: 'Manipulação do DOM',
+        img: './image/manipulandoDom2.png',
+        desc: `Um dos primeiros mini projetos 
+                que foram feitos com base ao curso.`,
+        href: 'https://deyvidmatos.github.io/manipulando-DOM-2/'
+    },
+    {
+        id: 5,
+        title: 'Flex-box e Grid',
+        img: './image/flexGrid.png',
+        desc: `Um dos primeiros mini projetos 
+                que foram feitos com base ao curso.`,
+        href: 'https://deyvidmatos.github.io/exercicioFlexboxGrid/'
+    },
+    {
+        id: 6,
+        title: 'Projeto com Bootstrap',
+        img: './image/projetoFinalBoostrap.png',
+        desc: `Um dos primeiros mini projetos 
+                que foram feitos com base ao curso.`,
+        href: 'https://deyvidmatos.github.io/projetoFinalBoostrap/'
+    },
+    {
+        id: 7,
+        title: 'Estilização com Css',
+        img: './image/estilizandoComCss2.png',
+        desc: `Um dos primeiros mini projetos 
+                que foram feitos com base ao curso.`,
+        href: 'https://deyvidmatos.github.io/estilizandoComCss-2/'
+    },
+    {
+        id: 8,
         title: 'Calculadora',
         img: './image/Calculadora.png',
         desc: `Calculadora javascript
@@ -9,7 +65,7 @@ export const projects = [
         href: './pages/calculadora/calculadora.html'
     },
     {
-        id: 2,
+        id: 9,
         title: 'Especies em Star Wars',
         img: './image/StarWars.png',
         desc: `Contem as especies de Star Wars
@@ -17,7 +73,7 @@ export const projects = [
         href: './pages/starwars/starwars.html'
     },
     {
-        id: 3,
+        id: 10,
         title: 'Menu de Restaurante',
         img: './image/MenuRestaurante.png',
         desc: `Cardápio onde pode-se criar mais
@@ -25,21 +81,21 @@ export const projects = [
         href: './pages/menuRestaurante/restaurant.html'
     },
     {
-        id: 4,
+        id: 11,
         title: 'Gerador de lorem',
         img: './image/geradorLorem.png',
         desc: `Gera paragrafos de lorem diferentes.`,
         href: './pages/geradorLorem/geratorLorem.html'
     },
     {
-        id: 5,
+        id: 12,
         title: 'Modal',
         img: './image/modal.png',
         desc: `Mini projeto com modal.`,
         href: './pages/modal/modal.html'
     },
     {
-        id: 6,
+        id: 13,
         title: 'Color change',
         img: './image/ColorFliper.png',
         desc: `Possui um botão para mudar a cor
@@ -47,7 +103,7 @@ export const projects = [
         href: './pages/mudaçaCor/hex.html'
     },
     {
-        id: 7,
+        id: 14,
         title: 'Reviews',
         img: './image/Reviews.png',
         desc: `Pagina simples de reviews com js
@@ -55,35 +111,35 @@ export const projects = [
         href: './pages/reviewPage/reviews.html'
     },
     {
-        id: 8,
+        id: 15,
         title: 'Counter',
         img: './image/counter.png',
         desc: `Contador simples com js.`,
         href: './pages//counter/counter.html'
     },
     {
-        id: 9,
+        id: 16,
         title: 'Projeto scouter',
         img: './image/reactDbz.png',
         desc: `Contem cards de personagens de dragon ball z super.`,
         href: 'https://deyvidmatos.github.io/dbz/'
     },
     {
-        id: 10,
+        id: 17,
         title: 'Tabs React',
         img: './image/reactTab.png',
         desc: `Projeto simples de mudança de conteúdo.`,
         href: 'https://deyvidmatos.github.io/tabs-React/'
     },
     {
-        id: 11,
+        id: 18,
         title: 'Planets React',
         img: './image/Planets.png',
         desc: `Projeto sobre planetas com mudança de conteúdo.`,
         href: 'https://deyvidmatos.github.io/planets-React/'
     },
     {
-        id: 12,
+        id: 19,
         title: 'Anime Project',
         img: './image/anime project.png',
         desc: `Projeto com catalogo de animes com pesquisa e paginação.`,
