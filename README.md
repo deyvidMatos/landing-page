@@ -26,9 +26,6 @@ no final tem um footer com contatos e o curriculo
 
 > ## *Uso:*
 > - Mostrar projetos;
-> ## *Serviços:*
-> - GitHub;
-> - GitHub Pages;
 > ## *Links:*
 > - deploy: Vai La ver: https://deyvidmatos.github.io/landing-page/ 
 > ## *Versão:*
